@@ -1,0 +1,68 @@
+{
+  "name": "dsh-whale-girl",
+  "version": "0.1.0",
+  "description": "DeepSeek Harness 插件：鲸鱼女孩桌宠。住在 Web GUI 角落的小鲸鱼——Agent 干活时游泳、调工具时吐泡泡、等审批时敲玻璃、完成时空翻庆祝；支持摸摸喂食等互动与好感度成长，并提供 whale_say 工具让 Agent 借她说话。纯程序化 SVG/CSS 动画，零素材依赖。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "cordis.patch.example.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "engines": {
+    "node": ">=20",
+    "dsh": ">=0.2.0-rc.2 <0.3.0-0"
+  },
+  "scripts": {
+    "check": "node --check lib/index.js && node --check lib/client.js"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "cordis",
+    "desktop-pet",
+    "web-ui"
+  ],
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.4",
+    "@deepseek-ai/schemastery": "^3.18.4",
+    "@deepseek-ai/dsh-tools": ">=0.2.0-rc.2 <0.3.0-0",
+    "@deepseek-ai/dsh-host-webserver": ">=0.2.0-rc.2 <0.3.0-0",
+    "@deepseek-ai/dsh-api-gateway": ">=0.2.0-rc.2 <0.3.0-0",
+    "@deepseek-ai/dsh-client-ui-slots": ">=0.2.0-rc.2 <0.3.0-0",
+    "react": "^18.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zyfgood/dsh-whale-girl.git"
+  },
+  "homepage": "https://github.com/zyfgood/dsh-whale-girl#readme",
+  "bugs": {
+    "url": "https://github.com/zyfgood/dsh-whale-girl/issues"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-slots"
+      ],
+      "platform": "web"
+    },
+    "manifestVersion": 1
+  }
+}

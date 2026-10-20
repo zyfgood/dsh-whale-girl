@@ -1,0 +1,17 @@
+# dsh-whale-girl 手工挂载示例
+#
+# 官方安装（dsh plugin add）会自动挂载 cordis.patch.yml，不需要本文件。
+# 只有当你绕过官方安装、手工编辑 profile 的 cordis.patch.yml 时，才把下面的
+# entry 抄进你的 profile patch（D:\... 或 ~/.dsh/profiles/<name>/cordis.patch.yml）：
+
+# - id: whale-girl
+#   name: 'dsh-whale-girl'
+#   config:
+#     visible: true
+#     size: 160
+#     bubbleScale: 1
+#     speechEnabled: true
+#     soundsEnabled: true
+#     petSayTool: true
+#     idleNagMinutes: 5
+#     sleepAfterMinutes: 10
