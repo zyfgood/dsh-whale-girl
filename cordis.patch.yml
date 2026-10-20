@@ -9,5 +9,5 @@
 
 - insert:
     - id: whale-girl
-      name: 'dsh-whale-girl'
-      disabled: !!js "[...ctx.loader.entries()].some((e) => e.options.name === 'dsh-whale-girl' && e.options.id !== 'whale-girl' && !e.disabled)"
+      name: '@zyfgood/dsh-whale-girl'
+      disabled: !!js "[...ctx.loader.entries()].some((e) => e.options.name === '@zyfgood/dsh-whale-girl' && e.options.id !== 'whale-girl' && !e.disabled)"

@@ -1,6 +1,7 @@
 # dsh-whale-girl 🐳 鲸鱼女孩
 
-> npm 包名：`dsh-whale-girl`（配置里插件行的 `name:` 也必须写这个名字）。
+> npm 包名：`@zyfgood/dsh-whale-girl`（配置里插件行的 `name:` 也必须写这个名字）。
+> 仓库目录名 / 历史文档里的 `dsh-whale-girl` 指同一个插件。
 
 DeepSeek Harness（DSH）插件：**鲸鱼女孩桌宠**。她住在 Web GUI 右下角，
 实时反映 Agent 的工作状态，也能陪你玩。纯程序化 SVG + CSS 动画，
@@ -62,12 +63,15 @@ dsh plugin --profile web add "github:zyfgood/dsh-whale-girl#main&path:/"
 # 桌面版用 desktop profile：
 dsh plugin --profile desktop add "github:zyfgood/dsh-whale-girl#main&path:/"
 
+# npm 渠道（已发布）
+dsh plugin --profile web add @zyfgood/dsh-whale-girl
+
 # 本地开发（junction 链接，改 lib/client.js 保存即热更）
 dsh plugin --profile desktop add /path/to/dsh-whale-girl
 ```
 
 安装后打开（或刷新）DSH Web GUI 即可，无需重启 Host。卸载：
-`dsh plugin --profile desktop remove dsh-whale-girl`。
+`dsh plugin --profile desktop remove @zyfgood/dsh-whale-girl`。
 
 ---
 
@@ -97,6 +101,8 @@ backflipping with a duration/tool-count report on success, sinking with
 
 ```bash
 dsh plugin --profile web add "github:zyfgood/dsh-whale-girl#main&path:/"
+# or from npm:
+dsh plugin --profile web add @zyfgood/dsh-whale-girl
 ```
 
 ## 结构

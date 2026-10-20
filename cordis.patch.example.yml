@@ -5,7 +5,7 @@
 # entry 抄进你的 profile patch（D:\... 或 ~/.dsh/profiles/<name>/cordis.patch.yml）：
 
 # - id: whale-girl
-#   name: 'dsh-whale-girl'
+#   name: '@zyfgood/dsh-whale-girl'
 #   config:
 #     visible: true
 #     size: 160

@@ -1,5 +1,5 @@
 {
-  "name": "dsh-whale-girl",
+  "name": "@zyfgood/dsh-whale-girl",
   "version": "0.1.0",
   "description": "DeepSeek Harness 插件：鲸鱼女孩桌宠。住在 Web GUI 角落的小鲸鱼——Agent 干活时游泳、调工具时吐泡泡、等审批时敲玻璃、完成时空翻庆祝；支持摸摸喂食等互动与好感度成长，并提供 whale_say 工具让 Agent 借她说话。纯程序化 SVG/CSS 动画，零素材依赖。",
   "type": "module",
