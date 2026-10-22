@@ -9,6 +9,8 @@ DeepSeek Harness（DSH）插件：**鲸鱼女孩桌宠**。她住在 Web GUI 右
 
 ## 手机访问（可选）
 
+> 0.3.0 为联动开发分支，尚未发布；需要配套的 `@zyfgood/dsh-mobile` 0.2.0 开发分支。
+
 鲸鱼的右侧鳍里拿着一部小手机（需要 [`@zyfgood/dsh-mobile`](https://github.com/zyfgood/dsh-mobile)）：
 
 - **点击手机**：打开/关闭手机端面板，面板自动锚定在桌宠上方；
